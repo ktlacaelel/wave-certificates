@@ -4,24 +4,24 @@ variable=$1
 # STEP ONE: create certificate
 # ============================
 
-. build_certificates.sh $variable
+. create.sh $variable
 
 
 # STEP TWO: dump certificate
 # ==========================
 
-. dump_certificate.sh $variable
+. dump.sh $variable
 
 
 # STEP THREE: check certificate
 # =============================
 
-. check_certificate.sh $variable
+. check.sh $variable
 
 
 # STEP FOUR: generate a ca issued certificate
 # ============================================
 
-. get_ca_issued_certificate.sh $variable
+. issue.sh $variable
 
 
