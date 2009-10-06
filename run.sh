@@ -1,3 +1,7 @@
+#!/bin/bash
+#
+# Certificate generator
+
 
 variable=$1
 
